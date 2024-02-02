@@ -13,3 +13,7 @@ Open a terminal or command prompt and navigate to the "weather-application" fold
 ### 3. Run the commamand 'npm start' in terminal
 
 It will start the project locally on the server "http://localhost:3000/".
+
+### 4. Link of Deployement
+
+https://masharibyazdani.github.io/Weather-App/
