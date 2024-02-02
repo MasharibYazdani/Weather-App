@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: #d8d7d7;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.heading{
+    background: #073291;
+    color: white;
+    font-size: 1.5rem;
+    height: 80px;
+    padding-top: 5px;
+    font-family: cursive;
+}
+
+.input{
+    margin-top: 20px;
+}
+
+.input input{
+    width: 25%;
+    height: 40px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 0 10px;
+    margin-left: 5px;
+}
+
+
+.input button{
+    margin: 0 20px;
+    width: 8%;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid white;
+    background: #073291;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.input button:hover{
+    background: #022a80;
+}
+
+.error{
+    font-size: 1rem;
+    color: red;
+    margin: 10px 0;
+}
+
+.city-name{
+    font-size: 1.1rem;
+    margin: 10px 0;
+    font-family: monospace;
+}
+
+.today-report{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 100px;
+    border: 1px solid #3f0a0a;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.report-details{
+    background: #97afff;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    margin: 10px 10px;
+   width: calc(100%/3);
+   height: 300px;
+
+}
+
+.report-details h4{
+    margin: 23px 0;
+    font-size: 1rem;
+}
+
+.report-details h3{
+    margin: 23px 0;
+    font-size: 1.2rem;
+}
+
+.report-temp{
+    background: #97afff;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    margin: 10px 10px;
+    width: calc(100%/3);
+    height: 300px;
+    /* opacity: 0.8; */
+}
+
+.report-temp button{
+    width: 150px;
+    height: 40px;
+    background: #073291;
+    outline: none;
+    border: 1px solid #073291;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 20px 5px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.report-temp button:hover{
+    background: #022a80;
+}
+
+.report-temp h1{
+   margin: 50px;
+   font-size: 3rem;
+   
+}
+
+
+
+.report-icon{
+    background: #97afff;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    margin: 10px 10px;
+    width: calc(100%/3);
+    height: 300px;
+   
+}
+
+.report-icon h4{
+    text-transform: capitalize;
+    
+}
+
+.forecast-details{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 50px;
+}
+
+.forcast-hading{
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .forecast-details{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .today-report{
+        flex-wrap: wrap;
+        
+    }
+
+    .report-details{
+        width: calc(80%/2);
+        margin: 20px 10px 20px 20px;
+    }
+    .report-temp{
+        width: calc(80%/2);
+        margin: 20px 20px 20px 10px;
+    }
+
+    .report-icon{
+        width: 100%;
+        margin: 0 20px 20px 20px;
+    }
+
+    .input input{
+        width: 30%;
+    }
+
+    .input button{
+        width: 12%;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .today-report{
+        flex-wrap: wrap;
+        
+    }
+
+    .report-details, .report-temp, .report-icon{
+        width: 100%;
+        margin: 20px 20px 20px 20px;
+    }
+
+    .input input{
+        width: 40%;
+    }
+    .input button{
+        width: 15%;
+    }
+    
+}
+
+@media only screen and (max-width: 750px) {
+
+    .today-report{
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .report-details, .report-temp, .report-icon{
+        width: 100%;
+        margin: 20px 20px 20px 20px;
+    }
+    .input input{
+        width: 50%;
+    }
+
+    .input button{
+        width: 24%;
+    }
+    .heading{
+       
+        padding-top: 15px;
+    }
+}
+
+
+
+
